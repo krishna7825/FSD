@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=b, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id" placeholder="Enter text foe heading">
+    <button onclick="addelement()">ADD header</button>
+     <script>
+        
+        addelement = ()=>{
+            const txt = document.getElementById('id').value;
+            const h1 = document.createElement('h1');
+            h1.textContent = txt;
+            let body = document.querySelector('body');
+            body.appendChild(h1);
+        }
+     </script>
+</body>
+</html>

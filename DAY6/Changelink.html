@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://abes.ac.in/">ABES E C</a>
+    <button id="btn"> Change the link</button>
+    <script>
+        let  s =true;
+        changelink=()=>{
+            let a1 = document.querySelector('a');
+            if(s){
+                a1.setAttribute('href','https://home.iitd.ac.in/');
+                a1.textContent = 'IIT DELHI';
+                s = false;
+            }
+            else{
+                a1.setAttribute('href','https://abes.ac.in/');
+                a1.textContent = 'ABES EC';
+                s = true;
+            }
+           
+        }
+        let btn = document.querySelector('#btn');
+        btn.addEventListener('click',changelink);
+    </script>
+</body>
+</html>
